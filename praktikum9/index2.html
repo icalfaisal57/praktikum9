@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Luaslingkaran(){
+            const phi = 3.14 ;
+            let jari_jari = document.getElementById("jari").value;
+            console.log(jari_jari)
+            let luas = phi * jari_jari * jari_jari;
+            let keliling = phi * ( jari_jari * 2 );
+            console.log(luas);
+            let hasil1 = document.getElementById("hasil");
+            hasil1.innerHTML = luas;
+            let hasil2 = document.getElementById("kel1");
+            hasil2.innerHTML = keliling;
+            
+        }
+        
+    </script>
+</head>
+<body>
+    Menghitung luas dan keliling lingkaran
+    <br>  Masukan jari jari:
+    <br><input type="number" id="jari">
+    <input type="submit" onclick="Luaslingkaran()">
+    <br> luas = <span id="hasil"></span>
+    <br>keliling = <span id="kel1"></span>
+</body>
+</html>

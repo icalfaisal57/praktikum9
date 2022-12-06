@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kurs(){
+            const rp = 14650;
+            let dlr = document.getElementById("dl").value ; 
+            kurs = rp * dlr ; 
+            let rupiah = document.getElementById("hasil");
+            rupiah.innerHTML = kurs
+        }
+    </script>
+</head>
+<body>
+    Menghitung kurs Rupiah
+    <br>masukan nilai ( $ )
+    <br><input type="number" id="dl">
+    <br><input type="submit" value="hitung" onclick="kurs()">
+    <br>Rp.<span id="hasil" ></span>
+</body>
+</html>
